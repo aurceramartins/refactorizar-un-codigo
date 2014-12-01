@@ -23,4 +23,10 @@ public class garaxe {
         tiempoeuros = (((resultado / 3) - 1) * 0.2) + 0.4;
         JOptionPane.showMessageDialog(null, "Usted ha tardado " + (resultado / 1000) + " segundos en retirar su coche \n Debe pagar " + tiempoeuros / 1000 + " euros");
     }
+
+    @Override
+    public String toString() {
+        return "garaxe{" + "tiempoinicial=" + tiempoinicial + ", tiemposalida=" + tiemposalida + ", tiempoeuros=" + tiempoeuros + '}';
+    }
+    
 }
